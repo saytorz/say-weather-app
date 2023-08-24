@@ -1,0 +1,115 @@
+body 
+     {
+        background-color: #F2F2F4;
+        border: 1px solid #676F81;
+        border-radius: 20px 20px;
+        margin: 30px 30px;
+        padding: 50px 50px;
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    color: #6dc948;
+    margin: 0;
+    padding: 0;
+    }
+    h2 {
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+         margin-top: 0;
+        padding: 0;
+    }
+    form {
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        margin: 0 auto 30px;
+            padding: 40px 150px;
+            color: #6dc948;
+            background-color: #E6E7EB;
+            border: 0 solid #000000;
+            border-radius: 4px;
+    }
+.current {
+    display: block;
+            margin: 0 auto 30px;
+            padding: 40px 150px;
+            color: #6dc948;
+            background-color: #E6E7EB;
+            border: 0 solid #000000;
+            border-radius: 4px;
+}
+.temperature {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+}
+.units {
+    position: relative;
+    top:-32px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    right: 30;
+    width: 20%;
+}
+         .city-info {
+              padding-left: 30px;
+              text-align: left;
+              font-family: 'Source Code Pro', monospace;
+         }
+         .fa-light .fa-sun-cloud {
+        position: relative;
+        left: 0;
+            margin: 30px auto;
+            width: 30%;
+         }
+         .precipitation {
+            font-weight: bold;
+            color: #676F81;
+         }
+         .humidity 
+         {
+            font-weight: bold;
+            color: #676F81;
+         }
+         .wind {
+            font-weight: bold;
+            color: #676F81;
+         }
+         .day-button {
+  flex: 1;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #fff;;
+  border: 1px solid #676F81;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px 5px;
+  
+}
+.day-button:hover {
+    color: #fff;
+    background-color: #6dc948;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;;
+}
+.search-form {
+     margin-bottom: 20px;
+}
