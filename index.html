@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 Plus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<style>
+    body 
+     {
+        background-color: #F2F2F4;
+        border: 1px solid #676F81;
+        border-radius: 20px 20px;
+        margin: 30px 30px;
+        padding: 50px 50px;
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    color: #6dc948;
+    margin: 0;
+    padding: 0;
+    }
+    h2 {
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+         margin-top: 0;
+        padding: 0;
+    }
+    form {
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        margin: 0 auto 30px;
+            padding: 40px 150px;
+            color: #6dc948;
+            background-color: #E6E7EB;
+            border: 0 solid #000000;
+            border-radius: 4px;
+    }
+.current {
+    display: block;
+            margin: 0 auto 30px;
+            padding: 40px 150px;
+            color: #6dc948;
+            background-color: #E6E7EB;
+            border: 0 solid #000000;
+            border-radius: 4px;
+}
+.temperature {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+}
+.units {
+    position: relative;
+    top:-32px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    right: 30;
+    width: 20%;
+}
+         .city-info {
+              padding-left: 30px;
+              text-align: left;
+              font-family: 'Source Code Pro', monospace;
+         }
+         .fa-light .fa-sun-cloud {
+        position: relative;
+        left: 0;
+            margin: 30px auto;
+            width: 30%;
+         }
+         .precipitation {
+            font-weight: bold;
+            color: #676F81;
+         }
+         .humidity 
+         {
+            font-weight: bold;
+            color: #676F81;
+         }
+         .wind {
+            font-weight: bold;
+            color: #676F81;
+         }
+         .day-button {
+  flex: 1;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #fff;;
+  border: 1px solid #676F81;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px 5px;
+  
+}
+.day-button:hover {
+    color: #fff;
+    background-color: #6dc948;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;;
+}
+.search-form {
+     margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+        <img src="images/logo.png" alt="overcast" class="logo"/> 
+
+       
+                    <form class="search-form" id="search-button">
+                        <input class="form" type="city" id="city-input" placeholder="Enter city">
+                        <input type="submit" value="Search">
+                   <input class="btn btn-success w-20" type="button" id="current-location-button" value="Current" />
+                   
+        <div>
+            <h1 id="city"> Kingston
+            </h1></br> 
+            <h3>
+                <span class="temperature" id="temperature">32</span><span class="units"><a href="#" id="celcius-link">°C</a> |<a href="#" id="fahrenheit-link">F°</a></span>
+            </h3> 
+            <h2 id="date">
+            </h2>
+        </div>
+        <div class="focus">
+        <span class="current">
+            <div class="container">
+                <div class="row">
+                    
+                        <strong>Mostly Sunny</strong> </br>
+                        <span> ☀️⛅️</span> <br>
+                        <span class="precipitation">
+                            Precipitation: 10%
+                        </span> <br>
+                        <span class="humidity">
+                            Humidity: 67%
+                        </span> <br>
+                        <span class="wind">
+                            Wind: 34km/h
+                        </div>
+                    </span>
+                </div>
+        </div> 
+<p class="para-3">
+    <div class="container">
+        <div class="row">
+            <button class="day-button">
+                Fri <br>
+                ⛅️ <br>
+                <strong>34°</strong> 26°
+            </button>
+            <button class="day-button">
+                Sat <br>
+                ⛅️ <br>
+                <strong>34°</strong> 26°
+            </button>
+            <button class="day-button">
+                Sun <br>
+                ⛅️ <br>
+                <strong>34°</strong> 26°
+            </button>
+            <button class="day-button">
+                Mon <br>
+                ⛅️ <br>
+                <strong>34°</strong> 26°
+            </button>
+            <button class="day-button">
+                Fri <br>
+                🌧️ <br>
+                <strong>34°</strong> 28°
+            </button>
+</p>
+<script>
+    function formatDate(inputDate) {
+      let hours = inputDate.getHours();
+      if (hours < 10) {
+        hours = `0${hours}`;
+      }
+
+      let minutes = inputDate.getMinutes();
+      if (minutes < 10) {
+        minutes = `0${minutes}`;
+      }
+
+      let dayIndex = inputDate.getDay();
+      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      let day = days[dayIndex];
+
+      return `${days[dayIndex]} ${hours}:${minutes}`;
+    }
+
+    function search(event) {
+      event.preventDefault();
+      let cityInput = document.querySelector("#city-input");
+      let city = cityInput.value;
+      let apiKey = "eb74577a92b309d6ea5914a086880563";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+      
+      axios.get(apiUrl).then(function(response) {
+        document.querySelector("#city").innerHTML = response.data.name;
+        document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+      });
+    }
+
+    function convertToFahrenheit(event) {
+      event.preventDefault();
+      let temperatureElement = document.querySelector("#temperature");
+      temperatureElement.innerHTML = 19;
+    }
+
+    function convertToCelcius(event) {
+      event.preventDefault();
+      let temperatureElement = document.querySelector("#temperature");
+      temperatureElement.innerHTML = 32;
+    }
+
+    function updateDate() {
+      let dateElement = document.querySelector("#date");
+      let currentTime = new Date();
+      dateElement.innerHTML = formatDate(currentTime);
+    }
+    
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showLocation);
+  }
+
+  function showLocation(position) {
+    let apiKey = "eb74577a92b309d6ea5914a086880563";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(function(response) {
+      document.querySelector("#city").innerHTML = response.data.name;
+      document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+    });
+  }
+
+  let searchForm = document.querySelector("#search-button");
+  let celciusLink = document.querySelector("#celcius-link");
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  let currentLocationButton = document.querySelector("#current-location-button");
+
+  celciusLink.addEventListener("click", convertToCelcius);
+  fahrenheitLink.addEventListener("click", convertToFahrenheit);
+  searchForm.addEventListener("submit", search);
+  currentLocationButton.addEventListener("click", getCurrentLocation);
+
+  updateDate();
+
+</script>
+</body>
+</html>
+
+
