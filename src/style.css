@@ -1,8 +1,11 @@
 body {
-  background-color: #f2f2f4;
+  background-color: #fff;
   border-radius: 30px;
   margin: 30px 30px;
-  padding: 50px 200px;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #000000 10px;
+  padding: 5px;
 }
 h1 {
   font-size: 50px;
