@@ -1,5 +1,5 @@
 body {
-  background-color: #ffff;
+  background-color: #f2f2f4;
   border-radius: 30px;
   margin: 30px 30px;
   padding: 50px 200px;
@@ -32,7 +32,6 @@ form {
   margin: 0 auto 30px;
   padding: 40px 150px;
   color: #6dc948;
-  background-color: #e6e7eb;
   border: 0 solid #000000;
   border-radius: 4px;
 }
@@ -41,7 +40,6 @@ form {
   margin: 0 auto 30px;
   padding: 40px 150px;
   color: #6dc948;
-  background-color: #e6e7eb;
   border: 0 solid #000000;
   border-radius: 4px;
 }
