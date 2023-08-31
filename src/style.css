@@ -1,11 +1,10 @@
 body {
   display: block;
-  margin: 8px;
   background-color: #fff;
   border-radius: 30px;
   margin: 30px 30px;
   box-sizing: border-box;
-  width: 50%;
+  max-width: 600px;
   border: solid #000000 1px;
   padding: 5px;
 }
