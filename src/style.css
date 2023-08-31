@@ -7,6 +7,10 @@ body {
   border: solid #000000 1px;
   padding: 5px;
 }
+body {
+  display: block;
+  margin: 8px;
+}
 h1 {
   font-size: 50px;
   text-align: center;
