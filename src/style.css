@@ -1,9 +1,8 @@
 body {
-  
 }
 h1 {
   font-size: 30px;
-  text-align: center;
+  text-align: left;
   font-family: "Source Code Pro", monospace;
   font-weight: 300;
   line-height: 28px;
@@ -12,7 +11,7 @@ h1 {
   padding: 0;
 }
 h2 {
-  text-align: center;
+  text-align: left;
   font-family: "Source Code Pro", monospace;
   line-height: 1;
   margin: 0;
