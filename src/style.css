@@ -29,6 +29,9 @@ h3 {
   margin-top: 0;
   padding: 0;
 }
+li {
+  list-style: none;
+}
 form {
   text-align: center;
   margin: 0 auto 30px;
