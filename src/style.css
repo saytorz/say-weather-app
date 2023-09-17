@@ -40,6 +40,9 @@ form {
   border: 0 solid #000000;
   border-radius: 4px;
 }
+.description {
+  text-align: left;
+}
 .temperature {
   font-size: 64px;
   font-weight: 400;
