@@ -77,14 +77,17 @@ a {
   width: 30%;
 }
 .precipitation {
+  font-size: 18px;
   font-weight: bold;
   color: #676f81;
 }
 .humidity {
+  font-size: 18px;
   font-weight: bold;
   color: #676f81;
 }
 .wind {
+  font-size: 18px;
   font-weight: bold;
   color: #676f81;
 }
