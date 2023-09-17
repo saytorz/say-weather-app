@@ -1,14 +1,16 @@
+body {
+  font-family: "Source Code Pro", monospace;
+}
 .my-app {
   max-width: 600px;
-  margin: 30 auoto;
+  margin: 30 auto;
   padding: 20px;
   border: 1px solid #cd69bf;
   border-radius: 10px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
-  font-family: "Source Code Pro", monospace;
   font-weight: 300;
   line-height: 28px;
   color: #6dc948;
@@ -17,20 +19,17 @@ h1 {
 }
 h2 {
   text-align: left;
-  font-family: "Source Code Pro", monospace;
   line-height: 1;
   margin: 0;
   padding: 0;
 }
 h3 {
   text-align: left;
-  font-family: "Source Code Pro", monospace;
   margin-top: 0;
   padding: 0;
 }
 form {
   text-align: center;
-  font-family: "Source Code Pro", monospace;
   margin: 0 auto 30px;
   padding: 40px 150px;
   color: #6dc948;
@@ -49,7 +48,7 @@ form {
   text-align: left;
 }
 .temperature {
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 1;
 }
@@ -70,7 +69,6 @@ a {
 .city-info {
   padding-left: 30px;
   text-align: left;
-  font-family: "Source Code Pro", monospace;
 }
 .fa-light .fa-sun-cloud {
   position: relative;
@@ -93,7 +91,6 @@ a {
 .day-button {
   flex: 1;
   text-align: center;
-  font-family: "Source Code Pro", monospace;
   background-color: #fff;
   border: 1px solid #676f81;
   border-radius: 20px;
