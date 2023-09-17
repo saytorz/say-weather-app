@@ -1,4 +1,5 @@
-body {
+.my-app {
+  max-width: 600px;
 }
 h1 {
   font-size: 30px;
